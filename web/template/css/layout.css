@@ -18,18 +18,25 @@
     grid-area: header;
     grid-template-columns: auto 1fr;
     grid-template-rows: 60% 40%;
+
+    background-color: red;
 }
 .hamburger_open {
     grid-area: hamburger_open;
+
+    background-color: yellow;
 }
 .hamburger_close {
     grid-area: hamburger_close;
 }
 .title {
     grid-area: title;
+
+    background-color: blue;
 }
 .breadcrumb {
     grid-area: breadcrumb;
+    background-color: green;
 }
 .nav-menu {
     display: grid;
