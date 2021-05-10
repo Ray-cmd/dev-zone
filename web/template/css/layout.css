@@ -17,26 +17,46 @@
         "breadcrumb breadcrumb";
     grid-area: header;
     grid-template-columns: auto 1fr;
-    grid-template-rows: 60% 40%;
-
-    background-color: red;
+    grid-template-rows: 65% 35%;
+    color: #fefefe;
+    background-color :#27ae60;
 }
 .hamburger_open {
     grid-area: hamburger_open;
-
-    background-color: yellow;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.hamburger_open div {
+    width: 35px;
+    height: 5px;
+    background-color: #fefefe;
+    margin: 6px 0;
 }
 .hamburger_close {
     grid-area: hamburger_close;
 }
 .title {
     grid-area: title;
-
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 8vh;
 }
 .breadcrumb {
     grid-area: breadcrumb;
-    background-color: green;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 1.8rem;
+    font-style: italic;
+
+    background-color: #2ecc71;
 }
 .nav-menu {
     display: grid;
@@ -67,4 +87,10 @@
 }
 .footer {
     grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fefefe;
+    background-color :#27ae60;
 }
