@@ -79,15 +79,21 @@ class Person():
         if not re.search("^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$", email):
             raise ValueError("Email is not valid")
         self.__email = email
-    
 
     @property
     def address_infos(self):
         return self.__address_infos
     @address_infos.setter
     def address_infos(self, address_infos):
-        if not isinstance(address_infos, Address) or address_infos != None:
-            print("pas une adresse")
+        if address_infos is None:
+            self.__address_infos = None
+            return
+        if isinstance(address_infos, list) or isinstance(address_infos, tuple):
+            address_infos = Address(address_infos[0], address_infos[1], address_infos[2], address_infos[3])
+        if not isinstance(address_infos, Address):
+            raise ValueError("Address should be a list, a tuple or a Address")
+
+
         self.__address_infos = address_infos
 
     def __str__(self):
@@ -105,14 +111,8 @@ def main():
     city = "Montagny-près-Yverdon"
 
     address = Address(street, street_num, zip_code, city)
+    #person = Person("Ray", "Luca", date, tel, email, (street, street_num, zip_code, city))
     person = Person("Ray", "Luca", date, tel, email, address)
     print(person)
-
-    person.address_infos.street_num = 22
-
-    print(person)
-
-    
-    
 
 main()
