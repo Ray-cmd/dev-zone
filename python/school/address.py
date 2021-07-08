@@ -56,4 +56,3 @@ class Address():
 
     def __str__(self):
         return f"{self.street} {self.street_num} {self.zip_code} {self.city}"
-

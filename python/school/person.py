@@ -100,19 +100,7 @@ class Person():
         return f"Last name : {self.last_name}\nFirst name : {self.first_name}\nBirth date : {self.birth_date}\nTelephon : {self.num_tel}\nEmail : {self.email}\nAddress : {self.address_infos}"
 
 def main():
-    #date = "23.08.1992"
-    date = datetime.datetime.strptime("22.08.1992", "%d.%m.%Y")
-    tel = "0244455902"
-    email = "luca.ray@pm.me"
-
-    street = "Sous la Loge"
-    street_num = 5
-    zip_code = 1442
-    city = "Montagny-près-Yverdon"
-
-    address = Address(street, street_num, zip_code, city)
-    #person = Person("Ray", "Luca", date, tel, email, (street, street_num, zip_code, city))
-    person = Person("Ray", "Luca", date, tel, email, address)
-    print(person)
+    pass
 
 main()
+
