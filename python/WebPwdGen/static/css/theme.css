@@ -1,0 +1,26 @@
+:root {
+    --ui-bg-color: #1f1f20;
+    --main-bg-color: #25262e;
+    --section-bg-color: #383a46;
+    --text-color: #f5f6fa; 
+}
+
+.container {
+    color: var(--text-color);
+}
+
+.header {
+    background-color: var(--ui-bg-color);
+}
+
+.main {
+    background-color: var(--main-bg-color);
+}
+
+.main section {
+    background-color: var(--section-bg-color);
+}
+
+.footer {
+    background-color: var(--ui-bg-color);
+}
