@@ -1,0 +1,44 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.accordion {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.accordion__header {
+    width: 100%;
+    height: 50px;
+    padding: 16px;
+    border: none;
+    border-bottom: solid 1px black;
+    outline: none;
+    cursor: pointer;   
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(209, 209, 209);
+}
+
+.accordion__header:after {
+    content: "\2295";
+}
+
+.accordion__panel {
+    display: none;
+    padding: 10px;
+}
+
+.accordion__panel--open {
+    display: unset;
+}
+
+.accordion__panel--open:after {
+    content: "\2296";
+}
