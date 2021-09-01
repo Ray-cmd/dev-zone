@@ -1,0 +1,52 @@
+@use "../abstracts" as abs;
+
+.accordion {
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: solid abs.$accordion-accent-color 1px;
+    background-color: abs.$accordion-main-color;
+    color: abs.$accordion-text-color;
+
+    &:after {
+        content: '\002B';
+        float: right;
+        margin-right: 0.5em;
+        font-size: 1.1em;
+        color: abs.$accordion-accent-color;
+    }
+
+    &:hover,
+    &:active {
+        background-color: abs.$accordion-active-color;
+    }
+
+
+    &__panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: darken(abs.$accordion-main-color, 2%);
+        color: abs.$accordion-text-color;
+    }
+
+    &__content {
+        padding: 10px 25px;
+
+        &::-moz-selection,
+        &::selection { 
+            background-color: abs.$accordion-accent-color; 
+        }
+    }
+
+    &--active {
+        &:after {
+            content: "\2212"; 
+        }
+    }
+}
