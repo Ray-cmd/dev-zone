@@ -1,0 +1,19 @@
+.typo {
+    min-height: 100vh;
+    padding: 1.5rem 3rem;
+    background-color: rgb(62, 146, 202);  
+    
+    &__title {
+        padding: 2rem 0;
+    }
+
+    &__content {
+        padding: 0 2rem;
+    }
+}
+
+.p_accordion {
+    min-height: 100vh;
+    padding: 0 3rem;
+    background-color: rgb(54, 54, 54);
+}
