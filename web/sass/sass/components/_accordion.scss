@@ -8,29 +8,29 @@
     text-align: left;
     font-size: 2.4rem;
     padding: 1rem 2rem;
-    border-bottom: solid abs.$accordion-accent-color 1px;
-    background-color: abs.$accordion-main-color;
-    color: abs.$accordion-text-color;
+    border-bottom: solid abs.$accent-color 1px;
+    background-color: abs.$main-color;
+    color: abs.$text-color;
 
     &:after {
         content: abs.$unicode_plus;
         float: right;
         
         
-        color: abs.$accordion-accent-color;
+        color: abs.$accent-color;
     }
 
     &:hover,
     &:active {
-        background-color: abs.$accordion-active-color;
+        background-color: abs.$active-color;
     }
 
     &__panel {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
-        background-color: abs.$accordion-active-color;
-        color: abs.$accordion-text-color;
+        background-color: abs.$active-color;
+        color: abs.$text-color;
     }
 
     &__content {
@@ -38,7 +38,7 @@
 
         &::-moz-selection,
         &::selection { 
-            background-color: abs.$accordion-accent-color; 
+            background-color: abs.$accent-color; 
         }
     }
 

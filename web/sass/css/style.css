@@ -60,6 +60,7 @@ html {
 body {
   font-family: sans-serif;
   font-size: 1.5rem;
+  color: #ebebeb;
 }
 
 h1, .h1,
@@ -103,7 +104,7 @@ p {
 }
 
 a {
-  color: #e9f3fc;
+  color: #63b3fd;
   text-decoration: none;
 }
 a:hover {
@@ -128,6 +129,7 @@ p > code, li > code, dd > code, td > code {
   box-decoration-break: clone;
   padding: 0.1rem 0.3rem 0.2rem;
   border-radius: 0.2rem;
+  color: black;
 }
 pre code {
   display: block;
@@ -136,7 +138,7 @@ pre code {
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   max-width: 100%;
-  min-width: 100px;
+  min-width: 10rem;
   padding: 0;
 }
 
@@ -150,28 +152,28 @@ em, i {
 
 hr {
   width: 80%;
-  color: #f0f0f0;
+  color: #63b3fd;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
 kbd {
-  margin: 0px 0.1em;
-  padding: 0.1em 0.6em;
-  border-radius: 3px;
-  border: 1px solid #cccccc;
-  color: #333333;
+  margin: 0rem 0.1rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #63b3fd;
+  color: black;
   line-height: 1.4;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-family: monospace;
+  font-size: 1rem;
   display: inline-block;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 2px #ffffff;
+  box-shadow: 0rem 0.1rem 0rem rgba(0, 0, 0, 0.2), inset 0rem 0rem 0rem 0.2rem #ffffff;
   background-color: #f7f7f7;
-  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
-  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  text-shadow: 0 1px 0 #fff;
+  -moz-box-shadow: 0 0.1rem 0rem rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #ffffff inset;
+  -webkit-box-shadow: 0 0.1rem 0rem rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #ffffff inset;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  text-shadow: 0 0.1rem 0 #fff;
 }
 
 sub {
@@ -191,10 +193,33 @@ strong {
   text-decoration: underline 0.2rem;
 }
 
+blockquote, q {
+  background: #2d2d2d;
+  border: 0.1rem solid #63b3fd;
+  border-left: 1rem solid #63b3fd;
+  padding: 1rem;
+  margin: 0 2rem;
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  word-spacing: 0.1rem;
+}
+blockquote:before, q:before {
+  color: #63b3fd;
+  content: "”";
+  font-size: 8rem;
+  line-height: 0.1rem;
+  position: relative;
+  top: 3.5rem;
+}
+
+.container {
+  background-color: #202020;
+}
+
 .typo {
   min-height: 100vh;
   padding: 1.5rem 3rem;
-  background-color: #3e92ca;
 }
 .typo__title {
   padding: 2rem 0;
@@ -206,7 +231,7 @@ strong {
 .p_accordion {
   min-height: 100vh;
   padding: 0 3rem;
-  background-color: #363636;
+  background-color: #3a3a3a;
 }
 
 .accordion {
