@@ -18,6 +18,7 @@ h5, .h5,
 h6, .h6 {
     font-weight: bold;
     padding-bottom: 1rem;
+    text-decoration: 0.2rem underline abs.$accent-color;
 }
 
 h1, .h1 {
@@ -61,7 +62,7 @@ a {
 }
 
 abbr {
-    text-decoration: underline dotted 0.2rem;
+    text-decoration: underline dotted 0.2rem abs.$accent-color;
 }
 
 b {
@@ -70,28 +71,25 @@ b {
 
 code {
     font-family: monospace;
+    background: #444444;
+    color: lighten(abs.$text-color, 100%);
+    word-wrap: break-word;
+    box-decoration-break: clone;
+    padding: .1rem .3rem .2rem;
+    border-radius: .2rem;
+}
 
-    p > &,
-    li > &,
-    dd > &,
-    td > & {
-        background: #ffeff0;
-        word-wrap: break-word;
-        box-decoration-break: clone;
-        padding: .1rem .3rem .2rem;
-        border-radius: .2rem;
-        color: darken(abs.$text-color, 100%);
-    }
+pre {
+    display: block;
+    color: white;
+    min-width: 50vw;
+    background: black;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    tab-width: 4;
 
-    pre & {
-        display: block;
-        background: none;
-        white-space: pre;
-        -webkit-overflow-scrolling: touch;
-        overflow-x: scroll;
-        max-width: 100%;
-        min-width: 10rem;
-        padding: 0;
+    &:hover, &:focus {
+        width: min-content;
     }
 }
 
@@ -159,7 +157,7 @@ blockquote, q{
 
     &:before {
         color: abs.$accent-color;
-        content: abs.$unicode_test;
+        content: abs.$unicode_quote;
         font-size: 8rem;
         line-height: 0.1rem;
         position: relative;

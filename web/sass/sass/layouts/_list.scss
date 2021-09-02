@@ -1,0 +1,32 @@
+@use "../abstracts" as abs;
+
+ul, ol {
+    padding: 1rem 2rem;
+}
+
+ul {
+    & li:before {
+        content: abs.$unicode_puce;
+        font-size: 2.2rem;
+        color: abs.$accent-color;
+    }
+}
+
+ol {
+    counter-reset: li;
+
+    & li {
+        counter-increment: li;
+
+        &:before {
+            content: "."counter(li); 
+            color: abs.$accent-color;
+            display: inline-block; 
+            width: 4rem; 
+            margin-left: -1.5em;
+            margin-right: 0.5em; 
+            text-align: right; 
+            direction: rtl;
+        }
+    }
+}
