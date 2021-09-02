@@ -69,30 +69,6 @@ b {
     font-weight: bold;
 }
 
-code {
-    font-family: monospace;
-    background: #444444;
-    color: lighten(abs.$text-color, 100%);
-    word-wrap: break-word;
-    box-decoration-break: clone;
-    padding: .1rem .3rem .2rem;
-    border-radius: .2rem;
-}
-
-pre {
-    display: block;
-    color: white;
-    min-width: 50vw;
-    background: black;
-    white-space: pre-wrap;
-    overflow-x: auto;
-    tab-width: 4;
-
-    &:hover, &:focus {
-        width: min-content;
-    }
-}
-
 del {
     text-decoration: line-through 0.2rem;
 }
