@@ -1,8 +1,0 @@
-input[type=search] {
-    border: 1px solid #999;
-    border-radius: 0;
-    -webkit-appearance: none;
-    font-family : inherit;
-    font-size: 2rem;
-    padding-left: 0.5rem;
-}
