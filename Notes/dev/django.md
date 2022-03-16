@@ -1,9 +1,11 @@
 # Installer Django
+
 Pour pouvoir utiliser Django, il faut que Python soit installé. Dès que c'est fait, il suffit de faire `pip install django`. Afin de garder une machine propre, il est recommander d'utiliser un environnement virtuelle. Personnellement, pour cette formation, je vais utiliser pipenv.
 
 # Gestion d'un projet
 
 ## Création d'un projet
+
 Django est fournit avec un outil en ligne de commande qui est très pratique et qui met à disposition plusieurs fonctions, comme par exemple:
 - Création d'un projet ou d'une application
 - Création des tables dans la base de données en ce basant sur le modèle
