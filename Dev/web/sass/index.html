@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+
+    <script src="js/accordion.js" async></script>
+    <script src="js/prism.js" async></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="typo">
+            <h2 class="typo__title">Typographie</h2>
+            <section class="typo__content">
+                <h5>Headings Balise</h5>
+                <h1>H1</h1>
+                <h2>H2</h2>
+                <h3>H3</h3>
+                <h4>H4</h4>
+                <h5>H5</h5>
+                <h6>H6</h6>
+                <hr>
+                <span class="h5">Headings Texte</span><br>
+                <span class="h1">H1</span>
+                <span class="h2">H2</span>
+                <span class="h3">H3</span>
+                <span class="h4">H4</span>
+                <span class="h5">H5</span>
+                <span class="h6">H6</span>
+                <hr>
+                <h5>Paragraph</h5>
+                <p><a href="#">Lorem</a> <b>ipsum</b> <strong>dolor</strong> <abbr title="abbr">amet</abbr> <code class="language-bash">consectetur</code> <del>adipisicing</del> <em>elit</em>. <i>Et</i> <kbd>m</kbd><kbd>o</kbd><kbd>l</kbd><kbd>e</kbd><kbd>k</kbd><kbd>s</kbd><kbd>t</kbd><kbd>i</kbd> am<sub>er</sub> err<sup>or</sup> dignissimos optio adipisci, cumque ipsa commodi nam fuga maxime porro recusandae suscipit corrupti numquam sapiente enim ad accusantium.
+                Voluptatum nisi impedit ullam inventore incidunt sapiente perspiciatis id amet quo, delectus illum enim dicta consectetur suscipit consequuntur ipsa magni mollitia voluptatibus dolore ut! Nihil, pariatur quasi! Iure, animi maxime?
+                Maiores dolorum sit totam? Cum omnis explicabo placeat hic veritatis facere nemo repudiandae sint, illo accusamus atque odit sed ab ut perferendis asperiores. Aspernatur fugit illum labore veritatis reiciendis amet.
+                Culpa eligendi consectetur nulla at! Recusandae corrupti sit quas enim sapiente error in consequatur labore ut atque placeat vero magnam, veritatis quia dicta! Iure deleniti id deserunt nemo, quam amet?</p>
+                <hr>
+                <h5>Just Texte</h5>
+                <a href="#">Lorem</a> <b>ipsum</b> <strong>dolor</strong> <abbr title="abbr">amet</abbr> <code class="language-bash">consectetur</code> <del>adipisicing</del> <em>elit</em>. <i>Et</i> <kbd>m</kbd><kbd>o</kbd><kbd>l</kbd><kbd>e</kbd><kbd>k</kbd><kbd>s</kbd><kbd>t</kbd><kbd>i</kbd> am<sub>er</sub> err<sup>or</sup> dignissimos optio adipisci, cumque ipsa commodi nam fuga maxime porro recusandae suscipit corrupti numquam sapiente enim ad accusantium.
+                Voluptatum nisi impedit ullam inventore incidunt sapiente perspiciatis id amet quo, delectus illum enim dicta consectetur suscipit consequuntur ipsa magni mollitia voluptatibus dolore ut! Nihil, pariatur quasi! Iure, animi maxime?
+                Maiores dolorum sit totam? Cum omnis explicabo placeat hic veritatis facere nemo repudiandae sint, illo accusamus atque odit sed ab ut perferendis asperiores. Aspernatur fugit illum labore veritatis reiciendis amet.
+                Culpa eligendi consectetur nulla at! Recusandae corrupti sit quas enim sapiente error in consequatur labore ut atque placeat vero magnam, veritatis quia dicta! Iure deleniti id deserunt nemo, quam amet?
+                <hr>
+                <h5>Code</h5>
+                <pre><code class="language-js">
+                    var a = 4;
+                    var b = 6;
+                    console.log(a + b);
+                </code></pre>
+                <hr>
+                <h5>Citation</h5>
+                <blockquote>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex alias sapiente aliquid optio vel, reprehenderit deleniti, soluta necessitatibus blanditiis earum maiores qui tempora quia! Cumque, quas eius! Corrupti, aliquid inventore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod neque, blanditiis assumenda, odit similique esse eum corporis repellat dolore harum exercitationem aperiam animi sit ullam odio in vero nesciunt ab?
+                </blockquote>
+                <q>Lorem ipsum dolor sit amet consectetur  quasi?</q>
+                <hr>
+                <h5>Liste</h5>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2
+                        <ul>
+                            <li>Item 2.1</li>
+                            <li>Item 2.2</li>
+                            <li>Item 2.3</li>
+                        </ul>
+                    </li>
+                    <li>Item 3</li>
+                </ul>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>         
+                    <li>Item 4</li>         
+                    <li>Item 5</li>         
+                    <li>Item 6</li>         
+                    <li>Item 7</li>         
+                    <li>Item 8</li>         
+                    <li>Item 9</li>         
+                    <li>Item 10</li>         
+                </ol>
+                <hr>
+                <h5>Table</h5>
+                <hr>
+                <h5>Form</h5>
+            </section>
+        </section>
+        <section class="p_accordion">
+            <h2 class="title">Accordion</h2>
+            <button class="accordion">Item 1</button>
+            <div class="accordion__panel">
+                <p class="accordion__content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    A quis delectus optio odit minus quisquam recusandae sint! Maiores, 
+                    fugit qui architecto odio autem consequatur amet numquam non. 
+                    Assumenda, dolorem nostrum.
+                </p>
+            </div>
+            <button class="accordion">Item 2</button>
+            <div class="accordion__panel">
+                <p class="accordion__content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    A quis delectus optio odit minus quisquam recusandae sint! Maiores, 
+                    fugit qui architecto odio autem consequatur amet numquam non. 
+                    Assumenda, dolorem nostrum.
+                </p>
+            </div>
+            <button class="accordion">Item 3</button>
+            <div class="accordion__panel">
+                <p class="accordion__content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    A quis delectus optio odit minus quisquam recusandae sint! Maiores, 
+                    fugit qui architecto odio autem consequatur amet numquam non. 
+                    Assumenda, dolorem nostrum.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

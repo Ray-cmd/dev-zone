@@ -1,0 +1,78 @@
+.container {}
+
+.header {
+    background-color: #0D0A0B;
+    color: #fefefe;
+}
+
+.header__hamburger {}
+
+.header__hamburger--item {
+    background-color: #fefefe;
+}
+
+.header__title {
+    color: #fefefe;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.header__search {
+    grid-area: header__search;
+}
+
+..header__search--bar {}
+
+.header__breadcrumb {
+    background-color: #646881;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.header__login {}
+
+.main {
+    background-color: #090C9B;
+    color: #fefefe;
+}
+
+.aside {
+    background-color: #657ED4;
+}
+
+.nav-menu {
+    background-color: hsl(0, 0%, 86%);
+    color: #000000;
+}
+
+.nav-menu__hamburger {
+    font-size: 5rem;  
+}
+
+.nav-menu__search{}
+
+.nav-menu__search--bar {}
+
+.nav-menu__login {}
+
+.nav-menu__login--item {
+    font-size: 1.5rem;
+}
+
+.nav-menu__login--link {}
+
+.nav-menu__links-list {}
+
+.nav-menu__links-list--item {}
+
+.nav-menu__links-list--link {}
+
+.nav-menu__social {}
+
+.social {}
+
+.footer {
+    font-size: 1.5rem;
+    color: #fefefe;
+    background-color :#27ae60;
+}

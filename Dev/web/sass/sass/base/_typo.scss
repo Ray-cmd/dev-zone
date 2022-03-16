@@ -1,0 +1,144 @@
+@use "../abstracts" as abs;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: abs.$text-color;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-decoration: 0.2rem underline abs.$accent-color;
+}
+
+h1, .h1 {
+    font-size: 4.5rem;
+}
+
+h2, .h2 {
+    font-size: 4rem;
+}
+
+h3, .h3 {
+    font-size: 3.5rem;
+}
+
+h4, .h4 {
+    font-size: 3rem;
+}
+
+h5, .h5 {
+    font-size: 2.5rem;
+}
+
+h6, .h6 {
+    font-size: 2;
+}
+
+p { 
+    padding: 1rem 2rem;
+    line-height: 2rem;
+    word-spacing: 0.1rem;
+}
+
+a {
+    color: abs.$accent-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline 0.2rem;
+        text-decoration-style: dotted;
+    }
+}
+
+abbr {
+    text-decoration: underline dotted 0.2rem abs.$accent-color;
+}
+
+b {
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through 0.2rem;
+}
+
+em, i {
+    font-style: italic;
+}
+
+hr {
+    width: 80%;
+    color: abs.$accent-color;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+kbd {
+    margin: 0rem 0.1rem;
+	padding: 0.1rem 0.6rem;
+	border-radius: 0.3rem;
+	border: 0.1rem solid abs.$accent-color;
+	color: darken(abs.$text-color, 100%);
+	line-height: 1.4;
+	font-family: monospace;
+	font-size: 1rem;
+	display: inline-block;
+	box-shadow: 0rem 0.1rem 0rem rgba(0,0,0,0.2), inset 0rem 0rem 0rem 0.2rem #ffffff;
+	background-color: rgb(247, 247, 247);
+	-moz-box-shadow: 0 0.1rem 0rem rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #ffffff inset;
+	-webkit-box-shadow: 0 0.1rem 0rem rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #ffffff inset;
+	-moz-border-radius: 0.3rem;
+	-webkit-border-radius: 0.3rem;
+	text-shadow: 0 0.1rem 0 #fff;
+}
+
+sub {
+    font-size: small;
+    position: relative;
+    top: 0.5rem;
+}
+
+sup {
+    font-size: small;
+    position: relative;
+    bottom: 0.5rem;   
+}
+
+strong {
+    font-weight: bold;
+    text-decoration: underline 0.2rem;
+}
+
+blockquote, q{
+    background: lighten(abs.$main-color, 5%);
+    border: 0.1rem solid abs.$accent-color;
+    border-left: 1rem solid abs.$accent-color;
+    padding: 1rem;
+    margin: 0 2rem;
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    word-spacing: 0.1rem;
+
+    &:before {
+        color: abs.$accent-color;
+        content: abs.$unicode_quote;
+        font-size: 8rem;
+        line-height: 0.1rem;
+        position: relative;
+        top: 3.5rem;
+    }
+
+
+}
