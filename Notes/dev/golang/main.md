@@ -17,6 +17,7 @@
     - [Printf - Affiché le type d'une variable](#printf---affiché-le-type-dune-variable)
     - [Opérateur d'affectation d'expression](#opérateur-daffectation-dexpression)
     - [Les types par défauts](#les-types-par-défauts)
+  - [](#)
 
 ## Introduction
 <!-- 
@@ -190,3 +191,5 @@ fmt.Println(number, float, str, boolean)
 ```bash
 0 0  false
 ```
+
+## 
