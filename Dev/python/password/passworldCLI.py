@@ -7,36 +7,36 @@ from libs.password import Password as pwd
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate a password")
     parser.add_argument(
-        "-l", 
-        "--length", 
+        "--length",
+        "-l",
         type=int,
         default=12,
         help="Length of the password"
     )
     parser.add_argument(
-        "-d", 
         "--digits",
+        "-d", 
         action="store_false",
         help="Add digits to the password",
     )
     parser.add_argument(
-        "-s", 
         "--specials",
+        "-s",
         action="store_true",
         help="Add specials to the password",
     )
     parser.add_argument(
-        "-n", 
         "--num",
+        "-n",
         type=int,
         default=1,
         help="Number of password to generate",
     )
     parser.add_argument(
-        "-e", 
         "--export",
+        "-e",
         action="store_true",
-        help="Export the password on an text file",
+        help="Export the password on an text file or clipboard",
     )
     args = parser.parse_args()
 
