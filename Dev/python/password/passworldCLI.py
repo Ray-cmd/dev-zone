@@ -8,10 +8,7 @@ TODO
         This feature will allow to chose in wich directory 
         the file will be created. It will also allow to chose
         the name of the file
-        EXEMPLE : passworldCLI.py -s -l32 -n100 --export ~/Documents/password  
-
-
-        test
+        EXEMPLE : passworldCLI.py -s -l32 -n100 --export ~/Documents/password
 """
 import argparse
 from datetime import datetime
