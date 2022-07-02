@@ -2,7 +2,6 @@ import string
 import random
 
 class Password:
-
     def __init__(self, length: int = 12, has_digits: bool = True, has_specials: bool = False) -> None:
         if not type(length) == int:
             raise ValueError("length must be an integer")
@@ -69,7 +68,7 @@ class Password:
 
     def __generate_password(self) -> str:
         string = ""
-        for i in range(0, self.__length):
+        for _ in range(self.__length):
             char = random.choice(self.__chars)
             string += char
         return string

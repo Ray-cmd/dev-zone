@@ -49,7 +49,7 @@ def write_file(password, path):
     console.print(f"[green][bold][+][/] The file [bold underline]{path}[/] was generate")
     
 if __name__ == "__main__":
-    # Build the command line tool
+    # --- Build the command line tool ---
     parser = argparse.ArgumentParser(description="Generate a password")
     parser.add_argument(
         "--length",
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    # Initialize Rich console
+    # --- Initialize Rich console ---
     console = Console()
     
     print("")
