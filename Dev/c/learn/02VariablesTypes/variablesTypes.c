@@ -33,8 +33,24 @@ int main(int argc, char** argv) {
     int test;
     printf("TEST %d\n", test);
 
-    char c = "c";
-    printf("%c", c);
+  
+
+    float test2 = 12.234234999;
+    printf("1 : %f | 2 : %g\n", test2, test2);
+
+    int maVariable = 42;
+    printf("Voici la valeur de ma variable : %d\n", maVariable);
+
+    int monInt = 42;
+    float monFloat = 42.424242;
+    char monChar = 'c';
+
+    printf("monInt : %d\nmonFloat : %f\nmonChar : %c\n", monInt, monFloat, monChar);
+
+    int premierNbr = 20;
+    int deuxiemeNbr = 22;
+
+    printf("Somme du premier et du deuxième nombre : %d", premierNbr + deuxiemeNbr);
 
     return 0;
 }
